@@ -11,6 +11,7 @@ struct Results: Decodable {
     let hits: [Post]
 }
 
+//We use a computed variable for ID
 struct Post: Decodable, Identifiable {
     var id: String{
         return objectID
